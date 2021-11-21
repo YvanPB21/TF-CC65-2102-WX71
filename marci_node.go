@@ -23,7 +23,7 @@ func main() {
 	}
 
 	//enviamos datos al server
-	fmt.Fprintln(con, "PUNO"+localhost[len(localhost)-4:len(localhost)])
+	fmt.Fprintln(con, "LIMA"+localhost[len(localhost)-4:len(localhost)])
 
 	defer con.Close()
 
