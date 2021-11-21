@@ -38,7 +38,7 @@ func filter_by_department(df dataframe.DataFrame, department string) dataframe.D
 
 func main() {
 	df := read_csv()
-	department := "LIMA"
+	department := "ICA"
 	df_department := filter_by_department(df, department)
 	fmt.Println(df_department)
 
