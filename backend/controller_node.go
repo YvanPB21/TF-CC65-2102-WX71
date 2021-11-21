@@ -67,7 +67,7 @@ func receiver(con net.Conn) {
 
 	if respuesta1 != "null" && respuesta2 != "null" {
 		//LÓGICA PARA ENVIAR RESPUESTA A BACK
-		answer := "En " + departamento + ", fallecieron " + respuesta1 + " personas, de las cuales " + respuesta2 + " no estuvieron vacunadas con dos dosis."
+		answer := "En " + departamento + ", fallecerán " + respuesta1 + " personas el próximo mes, de las cuales " + respuesta2 + " no estarán vacunadas con dos dosis."
 		respuesta1 = "null"
 		respuesta2 = "null"
 		fmt.Println(answer)
