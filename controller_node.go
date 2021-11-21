@@ -11,6 +11,7 @@ import (
 
 var localhost string
 var remotehost string
+var departamento string
 var respuesta1 string
 var respuesta2 string
 
@@ -44,7 +45,6 @@ func main() {
 }
 
 func receiver(con net.Conn) {
-	//fmt.Fprintln(con, "sender message from server to client")
 
 	//lectura de lo que llega al server
 	bufferIn := bufio.NewReader(con) //objeto de lectura de conexión
@@ -57,8 +57,6 @@ func receiver(con net.Conn) {
 	var puertoEmisor = strings.TrimSpace(msg)[len(strings.TrimSpace(msg))-4 : len(strings.TrimSpace(msg))]
 	msg = strings.TrimSpace(msg)[0 : len(strings.TrimSpace(msg))-4]
 
-	//TODO: PONER CONDICIONES DE QUE SI EL PUERTO ES 6943, INCLUIRLO DENTRO DE UNA VARIABLE "RESPUESTA A BACK" Y SI ES 6944 INCLUIRLO DENTRO DEL ARRAY GLOBAL "RESPUESTA A BACK"
-
 	if puertoEmisor == "6943" { //Si vino del back, emitir los dos mensajes a los nodos regresiones
 		respuesta1 = msg
 	}
@@ -69,7 +67,7 @@ func receiver(con net.Conn) {
 
 	if respuesta1 != "null" && respuesta2 != "null" {
 		//LÓGICA PARA ENVIAR RESPUESTA A BACK
-		answer := "Fallecieron: " + respuesta1 + ", de los cuales " + respuesta2 + " no estuvieron vacunados con dos dosis."
+		answer := "En " + departamento + ", fallecieron " + respuesta1 + " personas, de las cuales " + respuesta2 + " no estuvieron vacunadas con dos dosis."
 		respuesta1 = "null"
 		respuesta2 = "null"
 		fmt.Println(answer)
@@ -77,11 +75,10 @@ func receiver(con net.Conn) {
 	//Emisión de respuestas
 
 	if puertoEmisor == "8071" { //Si vino del back, emitir los dos mensajes a los nodos regresiones
+		departamento = msg
 		go sender(msg, "6943")
 		go sender(msg, "6944")
 	}
-
-	//TODO: CREAR CONDICION QUE CHEQUEE SI EL STRUCT DE RESPUESTA YA ESTÁ COMPLETO. SI ESTÁ COMPLETO, ENVIAR LA RESPUESTA Y VACIAR LA ESTRUCTURA PARA UN SIGUIENTE ENVÍO
 
 }
 
