@@ -13,7 +13,7 @@
           PUNO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -23,7 +23,7 @@
           LIMA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -31,7 +31,7 @@
           LAMBAYEQUE
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -39,7 +39,7 @@
           ANCASH
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -49,7 +49,7 @@
           AREQUIPA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -57,7 +57,7 @@
           LORETO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -67,7 +67,7 @@
           HUANCAVELICA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -75,7 +75,7 @@
           JUNIN
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -85,7 +85,7 @@
           PIURA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -93,7 +93,7 @@
           CAJAMARCA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -101,7 +101,7 @@
           AYACUCHO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -109,7 +109,7 @@
           UCAYALI
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -117,7 +117,7 @@
           TUMBES
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -127,7 +127,7 @@
           CALLAO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -135,7 +135,7 @@
           LA LIBERTAD
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -145,7 +145,7 @@
           SAN MARTIN
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -155,7 +155,7 @@
           ICA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -165,7 +165,7 @@
           APURIMAC
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -175,7 +175,7 @@
           CUSCO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -185,7 +185,7 @@
           HUANUCO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -193,7 +193,7 @@
           AMAZONAS
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
@@ -201,7 +201,7 @@
           MADRE DE DIOS
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -211,7 +211,7 @@
           TACNA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -221,7 +221,7 @@
           MOQUEGUA
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -231,7 +231,7 @@
           PASCO
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{this.prediction}}
         </v-expansion-panel-content>
       </v-expansion-panel>
 
@@ -240,25 +240,32 @@
 </template>
 
 <script>
-  //import axios from "axios"
-export default {
-  name: 'Regions',
-  data(){
-    return{
-      regions:[],
-      selected:undefined,
-    }
-  },
-  methods:{
-    predictRegion(region){
-      //axios.get("http://localhost:8080/prediction?dep="+region)
-    console.log(region)
-    }
+  import axios from "axios"
+  export default {
+    name: 'Regions',
+    data(){
+      return{
+        regions:[],
+        prediction:undefined,
+      }
+    },
+    methods:{
+      predictRegion(region){
+        this.prediction = 'Cargando...'
 
-  },
-  created() {
+        axios.get("http://localhost:8071/prediction?dep="+region).then(
+                response=>{
+                  this.prediction=response.data.prediction;
+                  console.log(response)
+                }
+        )
+
+      }
+
+    },
+    created() {
+    }
   }
-}
 </script>
 <style>
   .subtitle {
