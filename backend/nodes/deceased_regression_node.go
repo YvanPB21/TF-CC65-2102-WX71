@@ -127,7 +127,6 @@ func main() {
 		fmt.Println("Falla al resolver la dirección de red:", err.Error())
 		os.Exit(1)
 	}
-
 	//diferidos
 	defer ln.Close()
 
@@ -163,10 +162,8 @@ func sender() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	//enviamos datos al server
 
 	fmt.Fprintln(con, respuesta+localhost[len(localhost)-4:len(localhost)])
-	//fmt.Fprintln(con, respuesta+"8090")
 	defer con.Close()
 }

@@ -15,8 +15,6 @@ var departamento string
 var respuesta1 string
 var respuesta2 string
 
-//TODO: CREAR STRUCT GLOBAL CON RESPUESTA 1 Y RESPUESTA 2
-
 func main() {
 	//servidor
 	respuesta1 = "null"
@@ -33,11 +31,8 @@ func main() {
 	defer ln.Close()
 
 	for {
-		log.Println("antes del accept")
 		//aceptar conexión (una)
 		con, err := ln.Accept()
-		log.Println("despues del accept")
-
 		if err != nil {
 			log.Fatal(err)
 		}
