@@ -22,7 +22,7 @@ var department string
 var respuesta string
 
 func procesar_csv() dataframe.DataFrame {
-	csv, err := os.Open("./data/TB_FALLECIDO_HOSP_VAC.csv")
+	csv, err := os.Open("../data/TB_FALLECIDO_HOSP_VAC.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -50,7 +50,7 @@ func procesar_csv() dataframe.DataFrame {
 		dataframe.Sort("mes_desde_inicio_covid"),
 	)
 
-	output, err := os.Create("./data/df_by_department_vaccinated.csv")
+	output, err := os.Create("../data/df_by_department_vaccinated.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -63,7 +63,7 @@ func linear_regression() {
 
 	procesar_csv()
 
-	f, err := os.Open("./data/df_by_department_vaccinated.csv")
+	f, err := os.Open("../data/df_by_department_vaccinated.csv")
 	if err != nil {
 		log.Fatal(err)
 	}

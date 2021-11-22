@@ -1,9 +1,10 @@
-module module
+module api
 
 go 1.17
 
 require (
 	github.com/go-gota/gota v0.12.0
+	github.com/rs/cors v1.8.0
 	github.com/sajari/regression v1.0.1
 )
 

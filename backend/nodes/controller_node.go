@@ -33,8 +33,11 @@ func main() {
 	defer ln.Close()
 
 	for {
+		log.Println("antes del accept")
 		//aceptar conexión (una)
 		con, err := ln.Accept()
+		log.Println("despues del accept")
+
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -67,10 +70,11 @@ func receiver(con net.Conn) {
 
 	if respuesta1 != "null" && respuesta2 != "null" {
 		//LÓGICA PARA ENVIAR RESPUESTA A BACK
-		answer := "En " + departamento + ", fallecerán " + respuesta1 + " personas el próximo mes, de las cuales " + respuesta2 + " no estarán vacunadas con dos dosis."
+		answer := "En " + departamento + ", falleceran " + respuesta1 + " personas, de las cuales " + respuesta2 + " no estuvieron vacunadas con dos dosis."
 		respuesta1 = "null"
 		respuesta2 = "null"
 		fmt.Println(answer)
+		go sender(answer, "8072")
 	}
 	//Emisión de respuestas
 
@@ -83,6 +87,8 @@ func receiver(con net.Conn) {
 }
 
 func sender(msg string, port string) {
+	log.Println("enviando a ", port)
+
 	remotehost = fmt.Sprintf("localhost:%s", port)
 	//Conectándonos a nodo regresión
 	con, err := net.Dial("tcp", remotehost)
