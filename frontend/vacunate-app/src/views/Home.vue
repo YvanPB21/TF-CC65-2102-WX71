@@ -11,7 +11,7 @@
           ></v-img>
         </v-row>
         <v-row>
-          <v-img src="../assets/banner.png" max-width="800px" contain="true"></v-img>
+          <v-img src="../assets/banner.png" position="center" width="800px" height="600px" contain="true"></v-img>
         </v-row>
 
         <v-row class="subtitle">
@@ -73,5 +73,6 @@ export default {
 
 .main{
   margin: 0px 200px 0px 200px;
+  
 }
 </style>
